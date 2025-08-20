@@ -27,7 +27,7 @@ const Projects = () => {
       description: "Created a real-time mapping application for tracking aircraft, previewing geolocated news, and integrating SDR tower data.",
       technologies: ["React", "TypeScript", "Leaflet library"],
       demoUrl: "",
-      githubUrl: "https://github.com/yousefmahhmoud/leaflet-map.git",
+      githubUrl: "https://github.com/yousefmahmoud/leaflet-map.git",
       featured: true,
       date: "2024"
     },
