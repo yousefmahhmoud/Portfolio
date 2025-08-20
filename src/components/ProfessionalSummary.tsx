@@ -33,15 +33,10 @@ const ProfessionalSummary = () => {
         <div className="grid lg:grid-cols-2 gap-12 items-center">
           <div className="space-y-6">
             <p className="text-lg text-gray-700 leading-relaxed">
-              I am a dedicated and results-driven software engineer with a strong foundation in 
-              full-stack development. My expertise spans across modern web technologies, with a 
-              particular focus on creating scalable, user-centric applications.
-            </p>
-            <p className="text-lg text-gray-700 leading-relaxed">
-              With a passion for continuous learning and innovation, I thrive in collaborative 
-              environments where I can contribute to meaningful projects that make a real impact. 
-              My approach combines technical excellence with creative problem-solving to deliver 
-              exceptional digital experiences.
+              Junior Frontend Developer with a strong foundation in React and Next.js, experienced in creating responsive,
+              user-focused web applications. Knowledgeable in backend integration with Laravel, RESTful APIs, and
+              modern UI frameworks like Tailwind CSS. Fast learner with strong problem-solving skills, eager to grow
+              within collaborative teams and contribute to impactful digital products.
             </p>
             <p className="text-lg text-gray-700 leading-relaxed">
               I believe in writing clean, maintainable code and following best practices to ensure 

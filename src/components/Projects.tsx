@@ -3,59 +3,51 @@ import { ExternalLink, Github, Star, Calendar } from 'lucide-react';
 
 const Projects = () => {
   const projects = [
+    
     {
-      title: "E-Commerce Platform",
-      description: "A full-stack e-commerce solution built with React, Node.js, and PostgreSQL. Features include user authentication, payment processing, inventory management, and real-time order tracking.",
-      technologies: ["React", "Node.js", "PostgreSQL", "Stripe", "Redis"],
-      demoUrl: "https://demo-ecommerce.example.com",
-      githubUrl: "https://github.com/yousef/ecommerce-platform",
+      title: "SKIP-EG",
+      description: "SKIP is a modern,responsive e-commerce website showcasing premium casual wear with a focus on comfort, style, and quality. The platform features an elegant design that reflects the brand's philosophy of \"thinking globally while wearing locally.\"",
+      technologies: ["React", "Vite", "Tailwind CSS", "TypeScript"],
+      demoUrl: "https://skipeg.vercel.app/",
+      githubUrl: "https://github.com/yousefmahhmoud/skipeg_.git",
       featured: true,
-      date: "2024"
-    },
-    {
-      title: "Task Management App",
-      description: "A collaborative task management application with real-time updates, drag-and-drop functionality, and team collaboration features. Built using modern React patterns and WebSocket technology.",
-      technologies: ["React", "TypeScript", "Socket.io", "MongoDB", "Express"],
-      demoUrl: "https://demo-taskapp.example.com",
-      githubUrl: "https://github.com/yousef/task-management",
-      featured: true,
-      date: "2024"
-    },
-    {
-      title: "Weather Dashboard",
-      description: "An interactive weather dashboard that provides detailed weather information, forecasts, and beautiful visualizations. Integrates with multiple weather APIs for accurate data.",
-      technologies: ["React", "Chart.js", "Weather API", "Tailwind CSS"],
-      demoUrl: "https://demo-weather.example.com",
-      githubUrl: "https://github.com/yousef/weather-dashboard",
+      date: "2023"
+    }
+    ,{
+      title: "LMS - Graduation project",
+      description: "Developed a full-featured web-based learning management system supporting course creation, user roles, authentication, and progress tracking.",
+      technologies: ["JQuery", "PHP", "SQL", "Laravel", "Blade code"],
+      demoUrl: "",
+      githubUrl: "https://github.com/yousefmahhmoud/Sharks-LMS-Graduation-project-.git",
       featured: false,
       date: "2023"
+    },
+    {
+      title: "Situation Awareness Map",
+      description: "Created a real-time mapping application for tracking aircraft, previewing geolocated news, and integrating SDR tower data.",
+      technologies: ["React", "TypeScript", "Leaflet library"],
+      demoUrl: "",
+      githubUrl: "https://github.com/yousefmahhmoud/leaflet-map.git",
+      featured: true,
+      date: "2024"
+    },
+    {
+      title: "Air Coordinates Table",
+      description: "Implemented algorithms to calculate the nearest SDR station and determine optimal antenna angle for maximum signal quality from aircraft.",
+      technologies: ["React", "Chart.js", "Tailwind CSS"],
+      demoUrl: "",
+      githubUrl: "",
+      featured: false,
+      date: "2024"
     },
     {
       title: "Portfolio Website",
       description: "A responsive portfolio website showcasing my projects and skills. Built with modern web technologies and optimized for performance and SEO.",
       technologies: ["React", "Vite", "Tailwind CSS", "TypeScript"],
-      demoUrl: "https://yousef-portfolio.example.com",
-      githubUrl: "https://github.com/yousef/portfolio",
+      demoUrl: "https://yousefmahmoud.vercel.app",
+      githubUrl: "https://github.com/yousefmahhmoud/Portfolio.git",
       featured: false,
-      date: "2023"
-    },
-    {
-      title: "Chat Application",
-      description: "A real-time chat application with multiple rooms, file sharing, and emoji support. Features end-to-end encryption and modern UI/UX design.",
-      technologies: ["React", "Socket.io", "Node.js", "MongoDB", "JWT"],
-      demoUrl: "https://demo-chat.example.com",
-      githubUrl: "https://github.com/yousef/chat-app",
-      featured: false,
-      date: "2023"
-    },
-    {
-      title: "Blog Platform",
-      description: "A content management system for bloggers with markdown support, SEO optimization, and analytics dashboard. Includes admin panel for content management.",
-      technologies: ["Next.js", "Prisma", "PostgreSQL", "Markdown", "Vercel"],
-      demoUrl: "https://demo-blog.example.com",
-      githubUrl: "https://github.com/yousef/blog-platform",
-      featured: false,
-      date: "2023"
+      date: "2025"
     }
   ];
 
@@ -144,7 +136,7 @@ const Projects = () => {
 
         <div className="text-center mt-12">
           <a
-            href="https://github.com/yousef"
+            href="https://github.com/yousefmahhmoud"
             target="_blank"
             rel="noopener noreferrer"
             className="inline-flex items-center px-8 py-4 border-2 border-yellow-500 text-yellow-500 font-semibold rounded-lg hover:bg-yellow-500 hover:text-black transition-all duration-300 transform hover:scale-105"

@@ -5,9 +5,9 @@ const Education = () => {
   const educationData = [
     {
       degree: "Bachelor of Science in Computer Science",
-      institution: "University of Technology",
-      location: "City, Country",
-      period: "2019 - 2023",
+      institution: "El-Shrouk Academy",
+      location: "Cairo, Egypt",
+      period: "2018 - 2023",
       gpa: "3.8/4.0",
       highlights: [
         "Graduated Magna Cum Laude",
@@ -16,10 +16,10 @@ const Education = () => {
       ]
     },
     {
-      degree: "High School Diploma",
-      institution: "Excellence High School",
-      location: "City, Country",
-      period: "2015 - 2019",
+      degree: "Professional Full Stack Web Development Diploma",
+      institution: "YAT",
+      location: "Cairo, Egypt",
+      period: "Sep 2020 - Jan 2021",
       gpa: "95%",
       highlights: [
         "Valedictorian",
@@ -72,20 +72,20 @@ const Education = () => {
                     <MapPin size={16} />
                     <span>{edu.location}</span>
                   </div>
-                  <div className="text-yellow-500 font-semibold">
+                  {/* <div className="text-yellow-500 font-semibold">
                     GPA: {edu.gpa}
-                  </div>
+                  </div> */}
                 </div>
               </div>
 
-              <div className="space-y-2">
+              {/* <div className="space-y-2">
                 {edu.highlights.map((highlight, highlightIndex) => (
                   <div key={highlightIndex} className="flex items-center space-x-3">
                     <div className="w-2 h-2 bg-yellow-500 rounded-full"></div>
                     <span className="text-gray-300">{highlight}</span>
                   </div>
                 ))}
-              </div>
+              </div> */}
             </div>
           ))}
         </div>

@@ -31,7 +31,7 @@ const Header = () => {
               </span>
             </h1>
             <p className="text-xl sm:text-2xl text-gray-300 max-w-2xl mx-auto leading-relaxed">
-              Full-Stack Developer & Software Engineer
+              Frontend Developer (React.js)
             </p>
             <p className="text-lg text-gray-400 max-w-3xl mx-auto">
               Passionate about creating innovative solutions and building exceptional digital experiences
@@ -48,7 +48,7 @@ const Header = () => {
               Download CV
             </a>
             <a
-              href="https://linkedin.com/in/yousef-mahmoud"
+              href="https://www.linkedin.com/in/youssef-mahmoud-4a624322b"
               target="_blank"
               rel="noopener noreferrer"
               className="group inline-flex items-center px-8 py-4 border-2 border-yellow-500 text-yellow-500 font-semibold rounded-lg hover:bg-yellow-500 hover:text-black transition-all duration-300 transform hover:scale-105"
@@ -59,13 +59,13 @@ const Header = () => {
           </div>
         </div>
 
-        {/* Scroll indicator */}
+        {/* Scroll indicator
         <button
           onClick={scrollToNext}
           className="absolute bottom-8 left-1/2 transform -translate-x-1/2 text-yellow-500 hover:text-yellow-400 transition-colors duration-300 animate-bounce"
         >
           <ChevronDown size={32} />
-        </button>
+        </button> */}
       </div>
     </section>
   );
