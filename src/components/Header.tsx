@@ -40,7 +40,7 @@ const Header = () => {
 
           <div className="flex flex-col sm:flex-row gap-4 justify-center items-center pt-8">
             <a
-              href="/Yousef-Mahmoud-FlowCV-Resume-20250820.pdf"
+              href="/Yousef-Mahmoud-Resume.pdf"
               download
               className="group inline-flex items-center px-8 py-4 bg-yellow-500 text-black font-semibold rounded-lg hover:bg-yellow-400 transition-all duration-300 transform hover:scale-105 hover:shadow-xl hover:shadow-yellow-500/25"
             >
