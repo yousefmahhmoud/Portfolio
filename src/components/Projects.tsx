@@ -110,24 +110,30 @@ const Projects = () => {
                 </div>
 
                 <div className="flex space-x-4">
-                  <a
-                    href={project.demoUrl}
-                    target="_blank"
-                    rel="noopener noreferrer"
-                    className="flex-1 inline-flex items-center justify-center px-6 py-3 bg-yellow-500 text-black font-semibold rounded-lg hover:bg-yellow-400 transition-all duration-300 transform hover:scale-105 group"
-                  >
-                    <ExternalLink size={18} className="mr-2 group-hover:scale-110 transition-transform duration-300" />
-                    Demo
-                  </a>
-                  <a
-                    href={project.githubUrl}
-                    target="_blank"
-                    rel="noopener noreferrer"
-                    className="flex-1 inline-flex items-center justify-center px-6 py-3 border-2 border-yellow-500 text-yellow-500 font-semibold rounded-lg hover:bg-yellow-500 hover:text-black transition-all duration-300 transform hover:scale-105 group"
-                  >
-                    <Github size={18} className="mr-2 group-hover:scale-110 transition-transform duration-300" />
-                    GitHub
-                  </a>
+                  {project.demoUrl && (
+                    <a
+                      href={project.demoUrl}
+                      target="_blank"
+                      rel="noopener noreferrer"
+                      className="flex-1 inline-flex items-center justify-center px-6 py-3 bg-yellow-500 text-black font-semibold rounded-lg hover:bg-yellow-400 transition-all duration-300 transform hover:scale-105 group"
+                    >
+                      <ExternalLink size={18} className="mr-2 group-hover:scale-110 transition-transform duration-300" />
+                      Demo
+                    </a>
+                  )}
+                  {project.githubUrl && (
+                    <a
+                      href={project.githubUrl}
+                      target="_blank"
+                      rel="noopener noreferrer"
+                      className={`inline-flex items-center justify-center px-6 py-3 border-2 border-yellow-500 text-yellow-500 font-semibold rounded-lg hover:bg-yellow-500 hover:text-black transition-all duration-300 transform hover:scale-105 group ${
+                        project.demoUrl ? 'flex-1' : 'w-full'
+                      }`}
+                    >
+                      <Github size={18} className="mr-2 group-hover:scale-110 transition-transform duration-300" />
+                      GitHub
+                    </a>
+                  )}
                 </div>
               </div>
             </div>
