@@ -3,7 +3,7 @@ import { Download, Linkedin, ChevronDown } from 'lucide-react';
 
 const Header = () => {
   const scrollToNext = () => {
-    const summarySection = document.getElementById('summary','education');
+    const summarySection = document.getElementById('summary');
     if (summarySection) {
       summarySection.scrollIntoView({
         behavior: 'smooth',
