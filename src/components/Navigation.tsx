@@ -4,7 +4,7 @@ const Navigation = () => {
   const [activeSection, setActiveSection] = useState('header');
 
   const navItems = [
-    { id: 'header', label: 'Home' },
+  
     { id: 'summary', label: 'Professional Summary' },
     { id: 'education', label: 'Education' },
     { id: 'skills', label: 'Skills' },
