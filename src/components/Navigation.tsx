@@ -4,7 +4,7 @@ const Navigation = () => {
   const [activeSection, setActiveSection] = useState('header');
 
   const navItems = [
-    
+    { id: 'header', label: 'Home' },
     { id: 'summary', label: 'Professional Summary' },
     { id: 'education', label: 'Education' },
     { id: 'skills', label: 'Skills' },
@@ -44,9 +44,7 @@ const Navigation = () => {
       <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
         <div className="flex justify-between items-center h-16 lg:h-20">
           <div className="flex-shrink-0">
-            <span className="text-xl lg:text-2xl font-bold text-white transition-all duration-300 hover:text-yellow-500">
-              <span className="text-yellow-500">Y</span>ousef
-            </span>
+           
           </div>
 
           {/* Navigation Items - Always Visible */}
