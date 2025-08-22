@@ -3,12 +3,20 @@ import { Download, Linkedin, ChevronDown } from 'lucide-react';
 
 const Header = () => {
   const scrollToNext = () => {
-    const summarySection = document.getElementById('summary');
+    const summarySection = document.getElementById('summary', 'education');
     if (summarySection) {
       summarySection.scrollIntoView({
         behavior: 'smooth',
         block: 'start',
       });
+    }
+    else{
+     if (educationSection) {
+      summarySection.scrollIntoView({
+        behavior: 'smooth',
+        block: 'start',
+      });
+    }
     }
   };
 
