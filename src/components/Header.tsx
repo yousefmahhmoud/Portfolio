@@ -62,7 +62,7 @@ const Header = () => {
         {/* Animated Scroll Button */}
         <button
           onClick={scrollToNext}
-          className="absolute bottom-3 right-8 p-4 bg-yellow-500/10 backdrop-blur-sm border border-yellow-500/30 rounded-full text-yellow-500 hover:text-yellow-400 hover:bg-yellow-500/20 transition-all duration-300 group animate-pulse hover:animate-bounce"
+          className="absolute bottom 10 right-8 p-4 bg-yellow-500/10 backdrop-blur-sm border border-yellow-500/30 rounded-full text-yellow-500 hover:text-yellow-400 hover:bg-yellow-500/20 transition-all duration-300 group animate-pulse hover:animate-bounce"
         >
           <ChevronDown size={24} className="group-hover:scale-110 transition-transform duration-300" />
           <div className="absolute inset-0 rounded-full bg-yellow-500/20 animate-ping"></div>
