@@ -50,6 +50,35 @@
   .card-dark {
     @apply bg-gray-900 rounded-xl p-8 hover:bg-gray-800 transition-all duration-300 transform hover:scale-[1.02] hover:shadow-2xl border border-gray-800 hover:border-yellow-500/30;
   }
+
+  /* Enhanced Navigation Animations */
+  .nav-button {
+    @apply relative overflow-hidden;
+  }
+
+  .nav-button::after {
+    content: '';
+    @apply absolute inset-0 bg-gradient-to-r from-transparent via-yellow-500/20 to-transparent;
+    transform: translateX(-100%);
+    transition: transform 0.6s ease-in-out;
+  }
+
+  .nav-button:hover::after {
+    transform: translateX(100%);
+  }
+
+  /* Mobile-optimized touch targets */
+  @media (max-width: 640px) {
+    .nav-button {
+      min-height: 44px;
+      min-width: 44px;
+    }
+  }
+
+  /* Smooth focus transitions */
+  .nav-button:focus-visible {
+    @apply ring-2 ring-yellow-500/50 ring-offset-2 ring-offset-black;
+  }
 }
 
 @layer utilities {
@@ -106,10 +135,50 @@
   h2 {
     font-size: 2rem;
   }
+
+  /* Mobile navigation optimizations */
+  nav {
+    backdrop-filter: blur(10px);
+    -webkit-backdrop-filter: blur(10px);
+  }
+
+  /* Ensure touch targets are accessible */
+  button {
+    min-height: 44px;
+  }
+}
+
+/* Enhanced mobile breakpoints */
+@media (max-width: 480px) {
+  .nav-button {
+    @apply text-xs px-1.5 py-2;
+  }
+}
+
+@media (min-width: 481px) and (max-width: 767px) {
+  .nav-button {
+    @apply text-sm px-2 py-2;
+  }
+}
+
+@media (min-width: 768px) and (max-width: 1024px) {
+  .nav-button {
+    @apply text-sm px-3 py-2;
+  }
+}
+
+@media (min-width: 1025px) and (max-width: 1280px) {
+  .nav-button {
+    @apply text-base px-4 py-2;
+  }
 }
 
 @media (min-width: 1600px) {
   .container-max {
     max-width: 1400px;
+  }
+
+  .nav-button {
+    @apply text-lg px-6 py-3;
   }
 }
