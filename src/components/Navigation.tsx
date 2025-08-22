@@ -22,6 +22,7 @@ const Navigation = () => {
           setActiveSection(navItems[i].id);
           break;
         }
+      }
     };
 
     window.addEventListener('scroll', handleScroll);
