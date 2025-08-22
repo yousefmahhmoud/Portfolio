@@ -47,31 +47,28 @@ const Navigation = () => {
            
           </div>
 
-          {/* Navigation Items - Always Visible */}
+          {/* Navigation Items */}
           <div className="flex-1 flex justify-end">
-            <div className="flex items-center space-x-2 sm:space-x-4 lg:space-x-8">
+            <div className="flex items-center space-x-1 sm:space-x-2 md:space-x-4 lg:space-x-8">
               {navItems.map((item) => (
                 <button
                   key={item.id}
                   onClick={() => scrollToSection(item.id)}
                   className={`
-                    relative px-2 py-2 sm:px-3 lg:px-4 
-                    text-xs sm:text-sm lg:text-base font-medium 
-                    transition-all duration-300 ease-in-out
-                    hover:text-yellow-500 hover:scale-105
+                    nav-button relative px-2 py-2 sm:px-3 md:px-4 lg:px-6
+                    text-xs sm:text-sm md:text-base lg:text-lg font-medium 
+                    transition-all duration-300 ease-in-out transform
+                    hover:text-yellow-500 hover:scale-105 hover:shadow-lg
                     focus:outline-none focus:ring-2 focus:ring-yellow-500/50 focus:ring-offset-2 focus:ring-offset-black
-                    rounded-lg
+                    rounded-lg overflow-hidden
                     ${
                     activeSection === item.id
-                      ? 'text-yellow-500 bg-yellow-500/10 shadow-lg transform scale-105'
-                      : 'text-white hover:bg-yellow-500/5'
+                      ? 'text-yellow-500 bg-yellow-500/10 shadow-lg scale-105 border-b-2 border-yellow-500'
+                      : 'text-white hover:bg-yellow-500/5 border-b-2 border-transparent'
                   }
-                    before:absolute before:bottom-0 before:left-1/2 before:w-0 before:h-0.5 
-                    before:bg-yellow-500 before:transition-all before:duration-300 before:transform before:-translate-x-1/2
-                    ${activeSection === item.id ? 'before:w-full' : 'hover:before:w-full'}
                   `}
                 >
-                  <span className="relative z-10 whitespace-nowrap">
+                  <span className="relative z-10 whitespace-nowrap font-semibold">
                     {item.label}
                   </span>
                 </button>

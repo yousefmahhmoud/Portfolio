@@ -53,31 +53,27 @@
 
   /* Enhanced Navigation Animations */
   .nav-button {
-    @apply relative overflow-hidden;
+    @apply relative overflow-hidden min-h-[44px] min-w-[44px];
   }
 
   .nav-button::after {
     content: '';
-    @apply absolute inset-0 bg-gradient-to-r from-transparent via-yellow-500/20 to-transparent;
+    @apply absolute inset-0 bg-gradient-to-r from-transparent via-yellow-500/30 to-transparent;
     transform: translateX(-100%);
-    transition: transform 0.6s ease-in-out;
+    transition: transform 0.8s ease-in-out;
   }
 
   .nav-button:hover::after {
     transform: translateX(100%);
   }
 
-  /* Mobile-optimized touch targets */
-  @media (max-width: 640px) {
-    .nav-button {
-      min-height: 44px;
-      min-width: 44px;
-    }
+  .nav-button:hover {
+    @apply shadow-lg shadow-yellow-500/25;
   }
 
   /* Smooth focus transitions */
   .nav-button:focus-visible {
-    @apply ring-2 ring-yellow-500/50 ring-offset-2 ring-offset-black;
+    @apply ring-2 ring-yellow-500/60 ring-offset-2 ring-offset-black outline-none;
   }
 }
 
@@ -151,25 +147,25 @@
 /* Enhanced mobile breakpoints */
 @media (max-width: 480px) {
   .nav-button {
-    @apply text-xs px-1.5 py-2;
+    @apply text-xs px-2 py-2;
   }
 }
 
 @media (min-width: 481px) and (max-width: 767px) {
   .nav-button {
-    @apply text-sm px-2 py-2;
+    @apply text-sm px-3 py-2;
   }
 }
 
 @media (min-width: 768px) and (max-width: 1024px) {
   .nav-button {
-    @apply text-sm px-3 py-2;
+    @apply text-base px-4 py-2;
   }
 }
 
 @media (min-width: 1025px) and (max-width: 1280px) {
   .nav-button {
-    @apply text-base px-4 py-2;
+    @apply text-lg px-6 py-3;
   }
 }
 
@@ -179,6 +175,6 @@
   }
 
   .nav-button {
-    @apply text-lg px-6 py-3;
+    @apply text-xl px-8 py-4;
   }
 }

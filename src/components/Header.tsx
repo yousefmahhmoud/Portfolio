@@ -40,7 +40,7 @@ const Header = () => {
 
           <div className="flex flex-col sm:flex-row gap-4 justify-center items-center pt-8">
             <a
-              href="/Yousef-Mahmoud-Resume.pdf"
+              href="/Yousef-Mahmoud-FlowCV-Resume-20250820.pdf"
               download
               className="group inline-flex items-center px-8 py-4 bg-yellow-500 text-black font-semibold rounded-lg hover:bg-yellow-400 transition-all duration-300 transform hover:scale-105 hover:shadow-xl hover:shadow-yellow-500/25"
             >
@@ -59,13 +59,14 @@ const Header = () => {
           </div>
         </div>
 
-        {/* Scroll indicator
+        {/* Animated Scroll Button */}
         <button
           onClick={scrollToNext}
-          className="absolute bottom-8 left-1/2 transform -translate-x-1/2 text-yellow-500 hover:text-yellow-400 transition-colors duration-300 animate-bounce"
+          className="absolute bottom-8 right-8 p-4 bg-yellow-500/10 backdrop-blur-sm border border-yellow-500/30 rounded-full text-yellow-500 hover:text-yellow-400 hover:bg-yellow-500/20 transition-all duration-300 group animate-pulse hover:animate-bounce"
         >
-          <ChevronDown size={32} />
-        </button> */}
+          <ChevronDown size={24} className="group-hover:scale-110 transition-transform duration-300" />
+          <div className="absolute inset-0 rounded-full bg-yellow-500/20 animate-ping"></div>
+        </button>
       </div>
     </section>
   );
