@@ -1,4 +1,5 @@
 import React from 'react';
+<<<<<<< HEAD
 import { ExternalLink, Github, Star, Calendar } from "lucide-react";
 
 const Projects = () => {
@@ -19,6 +20,13 @@ const Projects = () => {
       featured: true,
       date: "2026"
     },
+=======
+import { ExternalLink, Github, Star, Calendar } from 'lucide-react';
+
+const Projects = () => {
+  const projects = [
+    
+>>>>>>> 254d6fc8b0b9cc0630bb6c929d93b3c9bf5b6d29
     {
       title: "SKIP-EG",
       description: "SKIP is a modern,responsive e-commerce website showcasing premium casual wear with a focus on comfort, style, and quality. The platform features an elegant design that reflects the brand's philosophy of \"thinking globally while wearing locally.\"",
@@ -27,6 +35,7 @@ const Projects = () => {
       githubUrl: "https://github.com/yousefmahhmoud/skipeg_.git",
       featured: true,
       date: "2023"
+<<<<<<< HEAD
     },
     {
       title: "Hass",
@@ -37,6 +46,10 @@ const Projects = () => {
       date: "2026"
     },
     {
+=======
+    }
+    ,{
+>>>>>>> 254d6fc8b0b9cc0630bb6c929d93b3c9bf5b6d29
       title: "LMS - Graduation project",
       description: "Developed a full-featured web-based learning management system supporting course creation, user roles, authentication, and progress tracking.",
       technologies: ["JQuery", "PHP", "SQL", "Laravel", "Blade code"],
@@ -163,9 +176,24 @@ const Projects = () => {
           ))}
         </div>
 
+<<<<<<< HEAD
         
       </div>
       
+=======
+        <div className="text-center mt-12">
+          <a
+            href="https://github.com/yousefmahhmoud"
+            target="_blank"
+            rel="noopener noreferrer"
+            className="inline-flex items-center px-8 py-4 border-2 border-yellow-500 text-yellow-500 font-semibold rounded-lg hover:bg-yellow-500 hover:text-black transition-all duration-300 transform hover:scale-105"
+          >
+            <Github size={20} className="mr-2" />
+            View All Projects on GitHub
+          </a>
+        </div>
+      </div>
+>>>>>>> 254d6fc8b0b9cc0630bb6c929d93b3c9bf5b6d29
     </section>
   );
 };

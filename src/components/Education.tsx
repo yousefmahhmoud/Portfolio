@@ -1,7 +1,10 @@
 import React from 'react';
 import { GraduationCap, Calendar, MapPin } from 'lucide-react';
 
+<<<<<<< HEAD
 
+=======
+>>>>>>> 254d6fc8b0b9cc0630bb6c929d93b3c9bf5b6d29
 const Education = () => {
   const educationData = [
     {
@@ -91,7 +94,10 @@ const Education = () => {
           ))}
         </div>
       </div>
+<<<<<<< HEAD
       
+=======
+>>>>>>> 254d6fc8b0b9cc0630bb6c929d93b3c9bf5b6d29
     </section>
   );
 };

@@ -16,7 +16,11 @@
   },
   "devDependencies": {
     "@eslint/js": "^9.9.1",
+<<<<<<< HEAD
     "@types/react": "^18.3.27",
+=======
+    "@types/react": "^18.3.5",
+>>>>>>> 254d6fc8b0b9cc0630bb6c929d93b3c9bf5b6d29
     "@types/react-dom": "^18.3.0",
     "@vitejs/plugin-react": "^4.3.1",
     "autoprefixer": "^10.4.18",
