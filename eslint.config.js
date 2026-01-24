@@ -26,3 +26,9 @@ export default tseslint.config(
     },
   }
 );
+
+"devDependencies": {
+  "@types/react": "^18.3.27",
+  "@types/react-dom": "^18.3.0",
+  ...
+}
