@@ -85,9 +85,7 @@ const Footer = () => {
             <p className="text-gray-400 text-sm">
               {currentYear} Yousef Mahmoud. All rights reserved.
             </p>
-            <p className="text-gray-400 text-sm flex items-center">
-              Made with <Heart className="w-4 h-4 mx-1 text-yellow-500 fill-yellow-500" /> and React
-            </p>
+            
           </div>
         </div>
       </div>
