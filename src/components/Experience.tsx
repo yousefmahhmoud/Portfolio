@@ -1,5 +1,5 @@
 import React from 'react';
-import { Briefcase, Calendar, MapPin } from 'lucide-react';
+import { Briefcase, Calendar, MapPin, Award } from 'lucide-react';
 
 const Experience = () => {
   const experiences = [
@@ -14,7 +14,8 @@ const Experience = () => {
         "Implemented responsive designs with Tailwind CSS for optimal user experience",
         "Collaborated with clients to deliver projects on time and within budget",
         "Maintained high code quality standards and best practices"
-      ]
+      ],
+      certificateUrl: null
     },
     {
       title: "Full Stack Web Developer Trainee",
@@ -27,7 +28,8 @@ const Experience = () => {
         "Developed full-featured web applications using Laravel, PHP, and jQuery",
         "Worked on team projects using Agile methodologies",
         "Built a Learning Management System as final graduation project"
-      ]
+      ],
+      certificateUrl: "https://drive.google.com/file/d/1gj0tAtT1wsokdq-AU8CyltfxSl6IyaM3/view?usp=drive_link"
     }
   ];
 
@@ -90,6 +92,20 @@ const Experience = () => {
                     <span className="text-gray-700 leading-relaxed">{achievement}</span>
                   </div>
                 ))}
+
+                {exp.certificateUrl && (
+                  <div className="pt-4">
+                    <a
+                      href={exp.certificateUrl}
+                      target="_blank"
+                      rel="noopener noreferrer"
+                      className="inline-flex items-center px-6 py-3 bg-yellow-500 text-black font-semibold rounded-lg hover:bg-yellow-400 transition-all duration-300 transform hover:scale-105 hover:shadow-lg"
+                    >
+                      <Award size={20} className="mr-2" />
+                      View Certificate
+                    </a>
+                  </div>
+                )}
               </div>
             </div>
           ))}
