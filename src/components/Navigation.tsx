@@ -7,10 +7,12 @@ const Navigation = () => {
 
   const navItems = [
     { id: 'header', label: 'Home' },
-    { id: 'summary', label: 'Professional Summary' },
+    { id: 'summary', label: 'About' },
+    { id: 'experience', label: 'Experience' },
     { id: 'education', label: 'Education' },
     { id: 'skills', label: 'Skills' },
     { id: 'projects', label: 'Projects' },
+    { id: 'contact', label: 'Contact' },
   ];
 
   useEffect(() => {

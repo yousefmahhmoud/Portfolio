@@ -1,5 +1,5 @@
 import React from 'react';
-import { Download, Linkedin, ChevronDown } from 'lucide-react';
+import { Download, Linkedin, ChevronDown, Mail, Github } from 'lucide-react';
 
 const Header = () => {
   const scrollToNext = () => {
@@ -56,6 +56,25 @@ const Header = () => {
             >
               <Linkedin size={20} className="mr-2 group-hover:scale-110 transition-transform duration-300" />
               LinkedIn
+            </a>
+          </div>
+
+          <div className="flex flex-wrap gap-4 justify-center items-center pt-6">
+            <a
+              href="mailto:yousefmahmoud020@gmail.com"
+              className="group inline-flex items-center px-6 py-3 bg-gray-800 text-gray-300 font-medium rounded-lg hover:bg-gray-700 hover:text-yellow-500 transition-all duration-300"
+            >
+              <Mail size={18} className="mr-2" />
+              Email Me
+            </a>
+            <a
+              href="https://github.com/yousefmahhmoud"
+              target="_blank"
+              rel="noopener noreferrer"
+              className="group inline-flex items-center px-6 py-3 bg-gray-800 text-gray-300 font-medium rounded-lg hover:bg-gray-700 hover:text-yellow-500 transition-all duration-300"
+            >
+              <Github size={18} className="mr-2" />
+              GitHub
             </a>
           </div>
         </div>
