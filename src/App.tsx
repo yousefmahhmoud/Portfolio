@@ -12,15 +12,17 @@ import BackToTop from './components/BackToTop';
 
 function App() {
   return (
-    <div className="min-h-screen bg-white text-gray-900">
+    <div className="min-h-screen bg-white text-gray-900" itemScope itemType="https://schema.org/Person">
       <Navigation />
       <Header />
-      <ProfessionalSummary />
-      <Experience />
-      <Education />
-      <Skills />
-      <Projects />
-      <Contact />
+      <main>
+        <ProfessionalSummary />
+        <Experience />
+        <Education />
+        <Skills />
+        <Projects />
+        <Contact />
+      </main>
       <Footer />
       <BackToTop />
     </div>

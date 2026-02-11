@@ -14,9 +14,9 @@ const Header = () => {
   };
 
   return (
-    <section id="header" className="min-h-screen bg-gradient-to-br from-black via-gray-900 to-black flex items-center justify-center relative overflow-hidden">
+    <header id="header" className="min-h-screen bg-gradient-to-br from-black via-gray-900 to-black flex items-center justify-center relative overflow-hidden">
       {/* Background Pattern */}
-      <div className="absolute inset-0 opacity-10">
+      <div className="absolute inset-0 opacity-10" aria-hidden="true">
         <div className="absolute inset-0 bg-gradient-to-r from-yellow-500/20 to-transparent"></div>
         <div className="absolute top-1/4 left-1/4 w-96 h-96 bg-yellow-500/5 rounded-full blur-3xl"></div>
         <div className="absolute bottom-1/4 right-1/4 w-96 h-96 bg-yellow-500/5 rounded-full blur-3xl"></div>
@@ -27,14 +27,14 @@ const Header = () => {
           <div className="space-y-4">
             <h1 className="text-5xl sm:text-6xl lg:text-7xl font-bold text-white leading-tight">
               <span className="block">Hello, I'm</span>
-              <span className="block text-yellow-500 bg-gradient-to-r from-yellow-400 to-yellow-600 bg-clip-text text-transparent">
+              <span className="block text-yellow-500 bg-gradient-to-r from-yellow-400 to-yellow-600 bg-clip-text text-transparent" itemProp="name">
                 Yousef Mahmoud
               </span>
             </h1>
-            <p className="text-xl sm:text-2xl text-gray-300 max-w-2xl mx-auto leading-relaxed">
+            <p className="text-xl sm:text-2xl text-gray-300 max-w-2xl mx-auto leading-relaxed" itemProp="jobTitle">
               Frontend Developer (React.js)
             </p>
-            <p className="text-lg text-gray-400 max-w-3xl mx-auto">
+            <p className="text-lg text-gray-400 max-w-3xl mx-auto" itemProp="description">
               Passionate about creating innovative solutions and building exceptional digital experiences
             </p>
           </div>
@@ -83,12 +83,13 @@ const Header = () => {
 <button
   onClick={scrollToNext}
   className="absolute bottom-5 right-8 p-4 bg-yellow-500/10 backdrop-blur-sm border border-yellow-500/30 rounded-full text-yellow-500 hover:text-yellow-400 hover:bg-yellow-500/20 transition-all duration-300 group animate-pulse hover:animate-bounce"
+  aria-label="Scroll to next section"
 >
-          <ChevronDown size={24} className="group-hover:scale-110 transition-transform duration-300" />
-          <div className="absolute inset-0 rounded-full bg-yellow-500/20 animate-ping"></div>
+          <ChevronDown size={24} className="group-hover:scale-110 transition-transform duration-300" aria-hidden="true" />
+          <div className="absolute inset-0 rounded-full bg-yellow-500/20 animate-ping" aria-hidden="true"></div>
         </button>
       </div>
-    </section>
+    </header>
   );
 };
 

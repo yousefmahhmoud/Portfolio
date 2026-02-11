@@ -45,18 +45,18 @@ const Navigation = () => {
   };
 
   return (
-    <nav className="fixed top-0 left-0 right-0 z-50 bg-black/95 backdrop-blur-sm border-b border-yellow-500/20">
+    <nav className="fixed top-0 left-0 right-0 z-50 bg-black/95 backdrop-blur-sm border-b border-yellow-500/20" role="navigation" aria-label="Main navigation">
       <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
         <div className="flex justify-between items-center h-16">
           <div className="flex-shrink-0">
-            <span className="text-xl font-bold text-white">
+            <span className="text-xl font-bold text-white" aria-label="Yousef Mahmoud">
               <span className="text-yellow-500">Y</span>ousef
             </span>
           </div>
 
           {/* Desktop Navigation */}
           <div className="hidden md:block">
-            <div className="ml-10 flex items-baseline space-x-8">
+            <div className="ml-10 flex items-baseline space-x-8" role="menubar">
               {navItems.map((item) => (
                 <button
                   key={item.id}
@@ -66,6 +66,9 @@ const Navigation = () => {
                       ? 'text-yellow-500 border-b-2 border-yellow-500'
                       : 'text-white hover:text-yellow-500'
                   }`}
+                  role="menuitem"
+                  aria-label={`Navigate to ${item.label} section`}
+                  aria-current={activeSection === item.id ? 'page' : undefined}
                 >
                   {item.label}
                 </button>
@@ -78,8 +81,10 @@ const Navigation = () => {
             <button
               onClick={() => setIsOpen(!isOpen)}
               className="text-white hover:text-yellow-500 transition-colors duration-200"
+              aria-label={isOpen ? 'Close menu' : 'Open menu'}
+              aria-expanded={isOpen}
             >
-              {isOpen ? <X size={24} /> : <Menu size={24} />}
+              {isOpen ? <X size={24} aria-hidden="true" /> : <Menu size={24} aria-hidden="true" />}
             </button>
           </div>
         </div>
@@ -87,7 +92,7 @@ const Navigation = () => {
         {/* Mobile Navigation */}
         {isOpen && (
           <div className="md:hidden">
-            <div className="px-2 pt-2 pb-3 space-y-1 bg-black/95 border-t border-yellow-500/20">
+            <div className="px-2 pt-2 pb-3 space-y-1 bg-black/95 border-t border-yellow-500/20" role="menu">
               {navItems.map((item) => (
                 <button
                   key={item.id}
@@ -97,6 +102,9 @@ const Navigation = () => {
                       ? 'text-yellow-500 bg-yellow-500/10'
                       : 'text-white hover:text-yellow-500 hover:bg-yellow-500/5'
                   }`}
+                  role="menuitem"
+                  aria-label={`Navigate to ${item.label} section`}
+                  aria-current={activeSection === item.id ? 'page' : undefined}
                 >
                   {item.label}
                 </button>
