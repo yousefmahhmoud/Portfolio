@@ -7,7 +7,7 @@ const Experience = () => {
       title: "Frontend Developer",
       company: "Freelance",
       location: "Remote",
-      period: "2023 - Present",
+      period: "2025 - Present",
       description: "Developing modern, responsive web applications using React.js, TypeScript, and Tailwind CSS for various clients.",
       achievements: [
         "Built multiple production-ready applications using React and TypeScript",
