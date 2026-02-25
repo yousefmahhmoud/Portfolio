@@ -11,7 +11,7 @@ const Contact = () => {
 
   const handleSubmit = (e: React.FormEvent) => {
     e.preventDefault();
-    const mailtoLink = `mailto:yousefmahmoud020@gmail.com?subject=${encodeURIComponent(formData.subject)}&body=${encodeURIComponent(`Name: ${formData.name}\nEmail: ${formData.email}\n\nMessage:\n${formData.message}`)}`;
+    const mailtoLink = `mailto:youssefelwan2000@gmail.com?subject=${encodeURIComponent(formData.subject)}&body=${encodeURIComponent(`Name: ${formData.name}\nEmail: ${formData.email}\n\nMessage:\n${formData.message}`)}`;
     window.location.href = mailtoLink;
   };
 
@@ -26,8 +26,8 @@ const Contact = () => {
     {
       icon: <Mail className="w-6 h-6" />,
       title: "Email",
-      content: "yousefmahmoud020@gmail.com",
-      link: "mailto:yousefmahmoud020@gmail.com"
+      content: "youssefelwan2000@gmail.com",
+      link: "mailto:youssefelwan2000@gmail.com"
     },
     {
       icon: <MapPin className="w-6 h-6" />,
